@@ -138,15 +138,16 @@ div[id$="Container"] {
   #nav {
     padding-inline: 10%;
     width: 80%;
+    gap: 10px;
   }
 
   #nav a {
     font-size: 16px !important;
-
   }
 
   a img {
     height: 12px !important;
+    padding-right: 2px !important;
   }
 
   .hover-underline-animation::after {
