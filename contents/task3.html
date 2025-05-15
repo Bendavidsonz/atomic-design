@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Case study a design system">
+    <meta name="author" content="Ben Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task3')">
+    <div id="nav">
+        <a href="../index.html" class="hover-underline-animation inactive"><img src="images/logo.png"><p>Home</p></a>
+        <a href="task1.html" class="hover-underline-animation inactive">Task 1</a>
+        <a href="task2.html" class="hover-underline-animation inactive">Task 2</a>
+        <a href="task3.html" class="hover-underline-animation ">Task 3</a>
+        <a href="task4.html" class="hover-underline-animation inactive">Task 4</a>
+    </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Task 3 - Case study a design system</h1>
+        <h2>Clock by Google: Material Design</h2>
+
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/clock.jpg" class="imgClick">
+                <p class="imgDesc">Example of <b>Rounded Buttons/Shapes</b> in Clock app</p>
+            </div>
+
+            <div class="slide atom">
+                <img src="images/clockMenu.jpg" class="imgClick">
+                <p class="imgDesc">Example of a <b>Menu</b> in Clock app</p>
+            </div>
+
+            <div class="slide atom">
+                <img src="images/stopwatch.jpg" class="imgClick">
+                <p class="imgDesc">Example of Stopwatch <b>destination</b> and change in <b>Navigation</b></p>
+            </div>
+        </div>
+
+        <hr class="chunkSep">
+        <h3>Atom + Molecule:</h3>
+        <p><b>Shapes</b> and <b>Buttons</b> are both displayed through the rounded button, which follows Material
+            Designs baseline shapes guidelines. Material Design's guidelines state that a fully curved shape (circle)
+            should be used for "Badge, Buttons, Icon buttons, Sliders, Switches and Search bar" and therefore is used
+            correctly and effectively implemented</p>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/baselineShapes.png" class="imgClick">
+            </div>
+        </div>
+        <hr class="chunkSep">
+        <h3>Organism:</h3>
+        <p>Material Design describes the purpose of menus as a way to temporarily display a list of choices upon
+            interaction. This interaction is typically initiated by the user through a
+            button or icon. In the context of the Google Clock app, the Menu element follows these guidelines closely,
+            serving as a means to provide users with access to various options and functionalities in a temporary and
+            contextual manner. </p>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/menu.png" class="imgClick">
+            </div>
+        </div>
+        <hr class="chunkSep">
+        <h3>Template/Page:</h3>
+        <p><b>Navigation</b> is displayed both as a template and as a page in Material Designs documentation. It is
+            displayed as a template through the use of the
+            navigation component built into Material design and as a page by filling the navigation bar with content
+            (Buttons + Text). The Google Clock app implements a navigation bar and follows the guidelines of:</p>
+        <ul>
+            <li>Provide access to three to five destinations</li>
+            <li>One destination is always active</li>
+            <li>Nav Bar positioned along the bottom of the screen</li>
+        </ul>
+
+        <p>The navigation did not include icons as per the guidelines which I think would have been nice.</p>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/navBar.png" class="imgClick">
+            </div>
+        </div>
+        <hr class="chunkSep">
+        <h3>Social Media Post:</h3>
+        <p>As Material Design is intended to create UI rather than graphics, I could not find any examples of a social
+            media post that utilised the design system.</p>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+</body>
+
+</html>

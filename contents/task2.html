@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Investigate design system examples">
+    <meta name="author" content="Ben Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task2')">
+    <div id="nav">
+        <a href="../index.html"  class="hover-underline-animation inactive"><img src="images/logo.png"><p>Home</p></a>
+        <a href="task1.html"  class="hover-underline-animation inactive">Task 1</a>
+        <a href="task2.html"  class="hover-underline-animation ">Task 2</a>
+        <a href="task3.html"  class="hover-underline-animation inactive">Task 3</a>
+        <a href="task4.html"  class="hover-underline-animation inactive">Task 4</a>
+      </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Task 2 - Investigate design system examples</h1>
+        <h2>Personal Perspective of Atomic Design:</h2>
+        <p>An atom in atomic design is defined as the smallest aspects components are made up of. For me, this makes
+            sense to be resources such as typography, colours and shapes, which then means a button would be a molecule.
+            Please note that atoms are different depending on the user/use case, and some people may decide both my view
+            and Brad Frost’s view are valid and have both colour, shape and a button as an atom. This however is
+            counterintuitive to me.
+        </p>
+        <p>Templates are reusable structural elements that provide a layout for content, pages are templates populated
+            with content.</p>
+
+        <hr class="chunkSep">
+        <h2>What does the brand do?</h2>
+        <h3>Material (Google):</h3>
+        <p>Google is a multinational technology company one of the five big tech companies along with Amazon, Apple,
+            Meta, and Microsoft. They focuse on a wide range of topics, from Artificial intelligence and cloud computing
+            to computer software and consumer electronics, but are widely known for their prominent search engine.</p>
+
+        <h3>Carbon (IBM):</h3>
+        <p>IBM is the largest industrial research organization in the world, whilst also being one of the world's
+            oldest and largest technology companies. IBM has been responsible for several technological innovations,
+            including the automated teller machine (ATM), dynamic random-access memory (DRAM), the floppy disk, the hard
+            disk drive, the magnetic stripe card, the relational database, the SQL programming language, and the UPC
+            barcode.</p>
+
+        <h3>Fluent (Microsoft):</h3>
+        <p>Microsoft is a multinational and one of the world's leading
+            technology corporations. They are renowned for their software products, services, and hardware devices such
+            as the Windows operating system, productivity suites such as Microsofta Office, cloud computing services
+            through Azure, and gaming platforms like Xbox.</p>
+
+        <h3>Human Interface Guidelines (Apple):</h3>
+        <p>Apple is a globally renowned technology company known mainly for the Macintosh computer, iPod, iPhone, iPad,
+            and Apple Watch. It is also known for its well designed interface and graphical content, as well as the App
+            Store, iCloud, Apple Music, and Apple TV+.</p>
+
+        <hr class="chunkSep">
+        <h2>What the system does/does not include</h2>
+
+        <ul>
+            <li><i>Please note the provided design systems include real world examples for their components,
+                    that can be considered as pages, and will therefore be included together as such. </i></li>
+            <li><i>Please also note the documentation is not limited to the evidence provided and is likely greater than
+                    displayed on this page. Examples include documentation on Usage, Styling, Implementation(Code) and
+                    accessibility.</i></li>
+        </ul>
+
+
+        <p>The table below is a simple represenatation of whether a design system contains specific Atomic Design
+            Elements.</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>Atoms</th>
+                <th>Molecules</th>
+                <th>Organisms</th>
+                <th>Templates</th>
+                <th>Pages</th>
+            </tr>
+            <tr>
+                <td>Material 3 (Google)</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+            </tr>
+            <tr>
+                <td>Carbon (IBM)</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+            </tr>
+            <tr>
+                <td>Fluent 2 (Microsoft)</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&cross;</td>
+                <td>&cross;</td>
+            </tr>
+            <tr>
+                <td>Human Interface Guidelines (Apple)</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+                <td>&check;</td>
+            </tr>
+        </table>
+
+        <h3>Examples of Atoms</h3>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/shapesExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Shapes</b> in Material Design</p>
+            </div>
+
+            <div class="slide atom">
+                <img src="images/spacingExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Spacing</b> in Carbon</p>
+            </div>
+
+            <div class="slide atom">
+                <img src="images/typographyExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Typography</b> in Fluent</p>
+            </div>
+
+            <div class="slide atom">
+                <img src="images/iconsExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Icons</b> in Human Interface Guidelines</p>
+            </div>
+        </div>
+        
+
+        <h3>Examples of Molecules</h3>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 1,'molecule')">&#10094;</button>
+        <button onclick="plusDivs(1, 1,'molecule')">&#10095;</button>
+            <div class="slide molecule">
+                <img src="images/buttonsExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Buttons</b> in Material Design</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/sliderExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Sliders</b> in Carbon</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/checkBoxExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>CheckBoxes</b> in Fluent</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/textboxExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Textboxes</b> in Human Interface Guidelines</p>
+            </div>
+        </div>
+        
+
+        <h3>Examples of Organisms</h3>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 2,'organism')">&#10094;</button>
+        <button onclick="plusDivs(1, 2,'organism')">&#10095;</button>
+
+            <div class="slide organism">
+                <img src="images/dateExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Date Pickers</b> in Material Design</p>
+            </div>
+
+            <div class="slide organism">
+                <img src="images/treeExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Tree Views</b> in Carbon</p>
+            </div>
+
+            <div class="slide organism">
+                <img src="images/personaExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Persona's</b> in Fluent</p>
+            </div>
+
+            <div class="slide organism">
+                <img src="images/pathControlExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Path Controls</b> in Human Interface Guidelines</p>
+            </div>
+        </div>
+        
+        <h3>Examples of Templates/Pages</h3>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 3,'tempage')">&#10094;</button>
+        <button onclick="plusDivs(1, 3,'tempage')">&#10095;</button>
+            <div class="slide tempage">
+                <img src="images/navTempExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Navigation</b> in Material Design as a Template</p>
+            </div>
+
+            <div class="slide tempage">
+                <img src="images/navPageExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Navigation</b> in Material Design as a Page</p>
+            </div>
+
+            <div class="slide tempage">
+                <img src="images/codeSnipExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Code Snippets</b> in Carbon. <br>Whilst a code snippet
+                    provides structure as a template, it is only displayed in the documentation with content, as a page.
+                </p>
+            </div>
+
+            <div class="slide tempage">
+                <img src="images/collumnViewExample.png" class="imgClick">
+                <p class="imgDesc">Example of documentation on <b>Column Views</b> in Human Interface Guidelines as a
+                    Template and Page</p>
+            </div>
+        </div>
+        
+
+        <hr class="chunkSep">
+        <h2>Does the system do a good job of assisting a designer to implement designs within the system?</h2>
+        <p>I believe all the Design Systems I looked at assisted designers well. They had modular components, allowing
+            for easy customization by the user. The depth and variety of their documentation allowed developers to be
+            creative whilst maintaining an intuitive user interface, and each component came with documentation,
+            tooltips and an example of its use case and scale.</p>
+        <p>I would say Apple's design system is more specific than the others, however is likely due to being used to
+            develop for their own products, not a large range of different brands running different software etc.</p>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Find out what a design system is">
+    <meta name="author" content="Ben Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task1')">
+    <div id="nav">
+        <a href="../index.html"  class="hover-underline-animation inactive"><img src="images/logo.png"><p>Home</p></a>
+        <a href="task1.html"  class="hover-underline-animation ">Task 1</a>
+        <a href="task2.html"  class="hover-underline-animation inactive">Task 2</a>
+        <a href="task3.html"  class="hover-underline-animation inactive">Task 3</a>
+        <a href="task4.html"  class="hover-underline-animation inactive">Task 4</a>
+      </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Task 1 - Find out what a design system is.</h1>
+        <p>A design system is a group of readily reusable components, guides, principles, tools, and patterns, ensuring
+            that teams produce cohesive and consistent content efficiently. This collection of resources can contain
+            building blocks of UI, guides on what content is suitable or required, colour palettes, typography, layout
+            and even code snippets. </p>
+        <p>Colours describe certain actions or meaning such as red representing a need to be alert or danger, an example
+            being a stop sign. </p>
+
+        <p>A relatable example of aesthetic principles given by design systems was provided by <a
+                href="https://www.contentful.com/blog/design-system-explained/">contentful.com</a> in
+            highway signage. Highway signage generally follows international conventions such as the <a
+                href="https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals">Vienna Convention on
+                Road Signs and Signals</a> to achieve a degree of uniformity in traffic signage between countries and
+            could be seen as a design system. A recogniseable example of this is the use of a variation of dark green or
+            blue colours for the background color of highway signage with a thick border (usually white). Similarly, the
+            font <a
+                href="https://en.wikipedia.org/wiki/Highway_Gothic#:~:text=Peru%20(under%20different%20series%20labels,other%20countries%20use%20Highway%20Gothic.">"Highway
+                Gothic"</a> is used consistently in many countries to "maximise legibility at distance and high speed".
+        </p>
+
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/roadSign.png" class="imgClick">
+            </div>
+            <div class="slide atom">
+                <img src="images/subwaySign.avif" class="imgClick">
+            </div>
+        </div>
+        <p>However, design systems do not purely consist of guidelines and resources for aesthetic purposes but also
+            content related guides as demonstrated by Shopify’s “<a href="https://polaris.shopify.com/">Polaris</a>”
+            design
+            system in how to <a href="https://polaris.shopify.com/content/product-content">write for a customer's
+                understanding</a>, “rather than defaulting to what
+            corporations call things”.</p>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/shopifyContent.png" class="imgClick">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+</body>
+
+</html>

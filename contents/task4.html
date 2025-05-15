@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Develop atomic design elements for an existing design system">
+    <meta name="author" content="Ben Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task4')">
+    <div id="nav">
+        <a href="../index.html"  class="hover-underline-animation inactive"><img src="images/logo.png"><p>Home</p></a>
+        <a href="task1.html"  class="hover-underline-animation inactive">Task 1</a>
+        <a href="task2.html"  class="hover-underline-animation inactive">Task 2</a>
+        <a href="task3.html"  class="hover-underline-animation inactive">Task 3</a>
+        <a href="task4.html"  class="hover-underline-animation">Task 4</a>
+      </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Task 4 - Develop atomic design elements for an existing design system</h1>
+        <p>I have chosen to create design system elements following Microsoft's "Fluent 2", but for a fabricated
+            Outdoors Company.</p>
+        <p>For atomic design components from atom to molecule, I will be going through the stages of creating a
+            <u>form</u> using the guidelines Fluent 2 provides.
+        </p>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/designReference.png" class="imgClick">
+            </div>
+        </div>
+        <p class="caption">Example of a login <b>form</b> in Microsoft using Fluent</p>
+
+        <hr class="chunkSep">
+        <h2>Atom - Colors + Shape</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/atomsDesign.png" class="imgClick">
+            </div>
+        </div>
+        <p class="caption">Logo icon sourced from <a
+                href="https://www.flaticon.com/free-icon/pine-tree_2225518">https://www.flaticon.com/free-icon/pine-tree_2225518</a>
+        </p>
+        <p>I found a color palette from Coolors.co that I thought I could work with and had the idea of an outdoors
+            company when I saw the green. I made sure there was a presence of a light color for background and a darker
+            color for "Semantics" as mentioned by Fluent.
+        </p>
+        <p>I found an Icon to fit the company, and two fonts I could use, one as a default easily readable font and the
+            other as a more interesting more unique logo related font.
+        </p>
+
+        <h2>Molecule - Inputs (Text/Button)</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/moleculesDesign.png" class="imgClick">
+            </div>
+        </div>
+        <p>For the forms components I followed the guideline of rectangles being the basic shape for most components and
+            the example of a login form from microsoft. I also took inspiration from what is common in a lot of forms
+            with a less saturated color for placeholder text and a way to tell which textbox you are in (In this case a
+            changing underline color)</p>
+
+        <h2>Organism/Template - Form (Layout/Spacing)</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/organismDesign.png" class="imgClick">
+            </div>
+        </div>
+        <p>I decided to add the Icon to the form and made the header text my "Special" font (Bernard MT Condensed). I
+            felt this would make the form feel more attached to the brand rather than a copy pasted one, and thought it
+            tied in well to the color scheme.</p>
+
+        <h2>Page - Login Screen</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/pageReference.png" class="imgClick">
+                <p class="imgDesc">Page Reference</p>
+            </div>
+            <div class="slide atom">
+                <img src="images/pageDesign.png" class="imgClick">
+                <p class="imgDesc">Page Designed</p>
+            </div>
+        </div>
+        <p>I decided to keep the site as simplistic as possible, similarly to Microsoft's webiste, as in my opinion, as
+            complexity increases, so does the difficulty to maintain a polished or even pleasing aesthetic. </p>
+        <p>I followed the layout many websites use with the Logo on the left of the nav bar, followed by the websites
+            outer catagories, with optional or extra features stuck to the right side.</p>
+        <p>I opted for a shadow on the form to make it more pronounced without the harsh edge of a border, again
+            inspired from Microsoft's clean simplistic layout, and chose a very light gradient background for the same
+            reason.</p>
+
+        <h2>Poster - Sale Poster</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'molecule')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'molecule')">&#10095;</button>
+            <div class="slide molecule">
+                <img src="images/posterDesignV1.png" class="imgClick">
+                <p class="imgDesc">Version 1.1</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/posterDesignV1.2.png" class="imgClick">
+                <p class="imgDesc">Version 1.2</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/posterDesignV2.png" class="imgClick">
+                <p class="imgDesc">Version 2.1</p>
+            </div>
+
+            <div class="slide molecule">
+                <img src="images/posterDesignV2.2.png" class="imgClick">
+                <p class="imgDesc">Version 2.2</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/posterDesignV3.png" class="imgClick">
+                <p class="imgDesc">Version 3:</p>
+            </div>
+        </div>
+
+        <p class="caption">Images sourced from <a href="https://www.pngwing.com/en/">https://www.pngwing.com/en/</a></p>
+
+        <p>Creating a poster from a design system designed for UI is quite difficult as generally Posters are generally
+            more creative or artistic but I think I did relatively okay.</p>
+        <p>I added flat colored trees onto a flat color background to maintain simplicity but also provide something a
+            little more interesting for a poster format. And followed my form design in adding shadows </p>
+        <p>For the background of the sale items I did a bit of experimenting over shapes and shadows, initially having a
+            rectangle with a curved top and seperate colored section for the pricing. I decided a seperate color for the
+            prices seperated them too much from the item.</p>
+        <p>For the next two versions I used shadows, similarly to before with the form page to seperate the content from
+            the background without a harsh change. However in version 2 I think the light background with the shadow
+            caused too harsh of a border so I darkened the background of the cards.</p>
+        <p>In version three, I decided that the light background made the items hard to see so switched the colors back
+            around, and to deal with the harsh shadow border I changed it's color to a slightly lighter green. I also
+            curved the edges as the light colored squares seemed to look a little harsh from a distance</p>
+
+        <h2>Social Media Post</h2>
+
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'organism')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'organism')">&#10095;</button>
+            <div class="slide organism">
+                <img src="images/socialReference.png" class="imgClick">
+                    <p class="imgDesc">Reference Images</p>
+            </div>
+            <div class="slide organism">
+                <img src="images/socialDesign.png" class="imgClick">
+                    <p class="imgDesc">Social Media Post Designed</p>
+            </div>
+        </div>
+        <p class="caption">Image sourced from <a
+                href="https://unsplash.com/photos/camping-in-forest-during-nightime-63Znf38gnXk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">https://unsplash.com/photos/camping-in-forest-during-nightime-63Znf38gnXk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash</a>
+        </p>
+        <p>I found this perfect image that matched my outdoors company and had a nice frame for a quote to sit
+            in
+            between the mountains. I also added a thick green border just inside the edge of the image to give
+            it a
+            little more framing.</p>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+
+</body>
+
+</html>
